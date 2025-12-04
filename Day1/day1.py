@@ -1,14 +1,8 @@
-import math
-import itertools
-import os
-import collections
-import re
-
 def read_input(file_path):
     with open(file_path, 'r') as file:
         return [line.strip() for line in file.readlines()]
 
-input = read_input(os.path.join("Day1", "input.txt"))
+input = read_input("Day1/input.txt")
 print("Input read. Number of lines:", len(input))
 
 start_value = 50
