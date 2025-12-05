@@ -12,6 +12,7 @@ def parse_range(productIDs):
         ranges.append( (int(lower), int(upper)) )
     return ranges
 
+# part 1 is a pretty fast solution
 def part1(productIDs):
     total = 0
     splits = parse_range(productIDs)
@@ -24,6 +25,7 @@ def part1(productIDs):
         
 print("Part 1:", part1(productIDs))
 
+# this is actually so cursed, but it works
 def part2(productIDs):
     total = 0
     splits = parse_range(productIDs)
