@@ -47,8 +47,8 @@ def part2(input):
     total_voltage = 0
     for bank in input:
         batteries = [int(char) for char in bank]
-        digits = batteries[0:12] # should have 12 at the end
-        digits_indices = [i for i in range(12)]
+        digits = batteries[0:12] # should have 12 at the end 
+        digits_indices = [i for i in range(12)] # i found changing this (and the line above) between 2 and 12 solves part 1 and part 2
         
         # maybe try a big ahh moving window
         
